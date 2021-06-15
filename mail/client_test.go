@@ -67,7 +67,7 @@ func TestService_SendMail(t *testing.T) {
 	c := pb.NewMailServiceClient(conn)
 
 	resp, err := c.SendMail(context.TODO(), &pb.MailRequest{
-		Mail: "qq@mail.com",
+		Mail: "real_jf@163.com",
 		Text: "test,test",
 	})
 	log.Print(resp)
